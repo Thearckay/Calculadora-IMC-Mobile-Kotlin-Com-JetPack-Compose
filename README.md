@@ -2,17 +2,8 @@
 
 Este é um projeto simples de uma Calculadora de Índice de Massa Corporal (IMC) desenvolvido para fins de aprendizado, utilizando as tecnologias mais modernas do ecossistema Android.
 
-[//]: # (## Screenshots)
-
-[//]: # ()
-[//]: # (<div align="center">)
-
-[//]: # (  <img src="screenshots/screen.png" width="300px"  alt="Print" height="100px"/>)
-
-[//]: # (</div>)
-
-[//]: # ()
-[//]: # (![Texto Alternativo]&#40;screenshots/screen.png&#41;)
+ ## Screenshot / Interface Gráfica
+![Texto Alternativo](screenshots/screen.png)
 
 ##  Tecnologias Utilizadas
 
