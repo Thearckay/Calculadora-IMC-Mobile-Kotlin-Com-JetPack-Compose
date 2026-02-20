@@ -47,8 +47,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-// todo - limitar a quantidade de linhas dos inputs
 @Composable
 fun TelaPrincipal(){
     var sexSelected by remember { mutableStateOf("") }
