@@ -16,6 +16,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
+import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
@@ -60,7 +64,7 @@ fun TelaPrincipal(){
         modifier = Modifier.fillMaxSize()
     ) {
         Row(
-            modifier = Modifier.padding(20.dp).fillMaxWidth(),
+            modifier = Modifier.padding(20.dp, 30.dp, 20.dp, 10.dp).fillMaxWidth(),
             horizontalArrangement = Arrangement.Center
         ) {
             Text(
@@ -139,16 +143,23 @@ fun TelaPrincipal(){
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            Text(
-                text = result,
-                fontSize = 22.sp,
-                fontWeight = FontWeight.Bold
-            )
+            Card(
+                modifier = Modifier.height(270.dp).fillMaxWidth().padding(10.dp, 0.dp),
+//                elevation = CardDefaults.elevatedCardElevation(defaultElevation = 10.dp)
+            ) {
+                Text(
+                    modifier = Modifier.padding(20.dp),
+                    text = result,
+                    fontSize = 22.sp
+                )
+            }
         }
 
         Spacer(modifier = Modifier.weight(1f))
 
-        Row() {
+        Row(
+            modifier = Modifier.padding(0.dp, 0.dp, 0.dp, 50.dp)
+        ) {
             Button(
                 modifier = Modifier.fillMaxWidth().padding(20.dp,20.dp),
                 onClick = {
